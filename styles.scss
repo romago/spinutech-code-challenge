@@ -1,3 +1,4 @@
+
 body {
   background: black;
   color: white;
@@ -70,6 +71,11 @@ body {
         text-transform: capitalize;
         text-align: center;
         opacity: 0;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        -ms-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
       }
 
       &:hover {
@@ -78,13 +84,10 @@ body {
         }
       }
 
-      &.active {
-        opacity: 0!important;
-      }
     }
 
     &:hover {
-      .circle:not(:hover) {
+      .item:not(:hover) {
         opacity: 0.5;
       }
     }
